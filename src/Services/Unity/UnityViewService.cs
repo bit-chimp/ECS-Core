@@ -1,7 +1,7 @@
-﻿using btcp.ECS.Services.Interfaces;
+﻿using btcp.ECS.src.Services.Interfaces;
 using UnityEngine;
 
-namespace btcp.ECS.Services.Unity
+namespace btcp.ECS.src.Services.Unity
 {
     public class UnityViewService : IAssetListener
     {

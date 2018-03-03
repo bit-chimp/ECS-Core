@@ -1,6 +1,6 @@
 ﻿using Entitas;
 
-namespace btcp.ECS.Services.Interfaces
+namespace btcp.ECS.src.Services.Interfaces
 {
     public interface IView
     {

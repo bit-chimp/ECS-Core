@@ -1,6 +1,6 @@
 ﻿using Entitas.CodeGeneration.Attributes;
 
-namespace btcp.ECS.Destroyed.Components
+namespace btcp.ECS.src.Components.Destroyed.Components
 {
     [Game, Event(false)]
     public sealed class DestroyedComponent : Entitas.IComponent

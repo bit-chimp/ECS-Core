@@ -1,6 +1,6 @@
 ﻿using Entitas.CodeGeneration.Attributes;
 
-namespace btcp.ECS.Asset.Components
+namespace btcp.ECS.src.Components.Asset.Components
 {
     [Event(false)]
     public sealed class AssetComponent : Entitas.IComponent

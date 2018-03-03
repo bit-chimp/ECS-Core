@@ -1,9 +1,9 @@
-﻿using btcp.ECS.Services.Interfaces;
+﻿using btcp.ECS.src.Services.Interfaces;
 using Entitas;
 using Entitas.Unity;
 using UnityEngine;
 
-namespace btcp.ECS.Services.Unity
+namespace btcp.ECS.src.Services.Unity
 {
 	public class UnityView : MonoBehaviour, IView, IPositionListener, IDestroyedListener {
 
