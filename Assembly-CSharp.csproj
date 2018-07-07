@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{2C00E0EA-FFA6-0429-02D7-54C9DF044F4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_5;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Sources\Generated\Components\Interfaces\IDelayEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\Interfaces\IIdEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Components\Interfaces\ITickEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Contexts.cs" />
+    <Compile Include="Assets\Sources\Generated\Feature.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameCollisionComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameDelayComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameIdComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameSelectionDownComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameSelectionOutComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameSelectionOverComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameSelectionUpComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameTickComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\Components\GameTickDelayComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Game\GameMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\Components\InputTickComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\Components\InputActionCommandComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\Components\InputActionCommandQueuedComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\Components\InputActionDelayComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\Components\InputActionIdComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\InputActionAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\InputActionComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\InputActionContext.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\InputActionEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\InputAction\InputActionMatcher.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaCollisionServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaInputActionServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaInputServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaSelectionServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaTickServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaTimeServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\Components\MetaViewServiceComponent.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\MetaAttribute.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\MetaComponentsLookup.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\MetaContext.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\MetaEntity.cs" />
+    <Compile Include="Assets\Sources\Generated\Meta\MetaMatcher.cs" />
+    <Compile Include="Assets\src\game\ecs\CommandSystems.cs" />
+    <Compile Include="Assets\src\game\utils\containers\BezierCurve.cs" />
+    <Compile Include="Assets\src\game\utils\containers\Color.cs" />
+    <Compile Include="Assets\src\game\utils\containers\Vector2.cs" />
+    <Compile Include="Assets\src\game\utils\containers\Vector2Int.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\collision\components\CollisionComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\selection\components\SelectionDownComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\selection\components\SelectionOutComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\selection\components\SelectionOverComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\selection\components\SelectionUpComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\selection\systems\SelectionCleanupSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\tick\components\TickComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\tick\components\TickDelayComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\tick\components\TickMultiplierComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\game\tick\systems\UpdateTickSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\general\delay\components\DelayComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\general\delay\systems\UpdateDelaySystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\general\id\components\IdComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\inputaction\command\components\CommandComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\inputaction\command\components\CommandQueuedComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\inputaction\command\systems\RemoveCommandSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\inputaction\command\systems\UpdateCommandDelaySystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\CollisionServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\InputActionServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\InputServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\SelectionServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\TickServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\TimeServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\components\ViewServiceComponent.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterCollisionServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterInputActionSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterInputServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterSelectionServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterServicesSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterTickServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterTimeServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\contexts\meta\services\systems\RegisterViewServiceSystem.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\extensions\ContextsIdExtensions.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\extensions\InputActionContextsExtension.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\collision\CollisionService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\collision\services\ICollisionController.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\collision\services\ICollisionService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\binding\IInputBindConfiguration.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\binding\InputBind.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\binding\InputBindConfiguration.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\binding\InputMapper.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\controller\IInputController.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\GlobalInputVars.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\InputService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\service\IInputMapper.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\input\service\IInputService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\inputaction\IInputActionService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\selection\ISelectionController.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\selection\ISelectionService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\selection\SelectionService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\tick\ITickService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\tick\Tick.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\tick\TickService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\time\ITimeService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\view\IEventListener.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\view\IViewController.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\core\view\IViewService.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\IInitializeController.cs" />
+    <Compile Include="Assets\src\libs\ecs-core\src\services\Services.cs" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>/Users/simon/Projects/Unity/siege/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>/Users/simon/Projects/Unity/siege/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.Unity">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/Entitas/Entitas.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.VisualDebugging.Unity">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/Entitas/Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Utils">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Logging">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Serialization">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Networking">
+      <HintPath>/Users/simon/Projects/Unity/siege/Assets/Plugins/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>/Users/simon/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>/Users/simon/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>/Users/simon/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C45D20BC-0A03-854F-86EA-48F712BB2074}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
